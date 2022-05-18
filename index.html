@@ -5,11 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css">
+    <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
-    
-    
+    <div class="header">
+        <h1>my library</h1>
+        <div class="libraryLog">
+            <div class="numOfBooks">number of books:<span><span></div>
+            <div class="numOfBooksRead">number of books read: <span></span></div>
+            <div class="numOfPages">number of pages read: <span></span></div>
+            <div class="averageRating">average rating: <span></span></div>
+        </div>
+    </div>
+    <div class="books">
+        <div class="card">
+            <div class="title">Gintama</div>
+            <div class="pages">pages:</div>
+            <div class="author">author:</div>
+            <div class="rating">rating:</div>
+            <div class="Editcard">
+            <button class="status">read</button>
+            <button class="removeBook">remove</button>
+            </div>
+        </div>
+  
+        
+    </div>
+    <button class="addBook">+</button>
+    <form class="Popupform" action="">
+       <div class="form-container"> 
+        <div class="titlediv"><label for="title">titleof the book:</label><input type="text" name="title" id="title"></div>
+        <div class="pagesdiv"><label for="pages">number of pages:</label><input type="text" name="pages" id="pages"></div>
+        <div class="authordiv"><label for="author">author:</label><input type="text" name="author" id="author"></div>
+        <fieldset>
+            <input type="radio" name="status" id="read"><label for="read">read</label>
+            <input type="radio" name="status" id="notRead"><label for="notRead">not read</label>
+        </fieldset>
+        <div class="ratingdiv"><label for="rating">rating:</label><input type="number" name="rating" id="rating"></div>
+       <div class="buttonsdiv"> 
+        <button type="button" class="submit">submit</button>
+        <button type="reset" class="reset">reset</button>
+       </div> 
+       </div> 
+    </form>    
 </body>
 </html>

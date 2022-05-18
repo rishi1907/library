@@ -1,0 +1,105 @@
+body {
+    
+    background-color: #8FDDE7;
+    display: grid;
+    min-height: 100vh;
+    align-content: start;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    background-color: #EDAEC0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    text-align: center;   
+    font-size: 2rem;
+}
+
+.header .libraryLog {
+    background-color: #F1F2E0;
+    display: grid;
+    padding: 20px;
+    text-align: left;
+    justify-self: center;
+    font-size: 1.5rem;
+}
+
+.books {
+    background-color: #8FDDE7;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,30%));
+    grid-auto-rows: 330px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #FFF4BD;
+    display: grid;
+    padding: 40px;
+    gap: 10px;
+    font-size: 2rem;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}   
+
+.Editcard {
+    display: flex;
+    justify-content: space-around;
+}
+.Editcard button {
+    width: 30%;
+    border-radius: 75px;
+}
+
+
+   
+.addBook {
+    border-radius: 75px;
+    background-color: #2E8BC0;
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 40px;
+    right:20px;
+    padding: 20px;
+}  
+
+.Popupform{
+    display: none;
+} 
+
+.form-container{
+    background-color: white;
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    padding: 40px;
+    font-size: 1.5rem;
+    gap: 20px;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.form-container div,fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
